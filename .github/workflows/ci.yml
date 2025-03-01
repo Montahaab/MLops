@@ -3,34 +3,50 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - main  # Déclenche l'action uniquement sur les changements dans la branche principale (main)
+      - main  # Déclenche l'action sur les modifications de la branche 'main'
     paths:
-      - '**/*.py'          # Surveille les fichiers Python
-      - '**/Makefile'      # Surveille le Makefile
-      - '**/Churn_Modelling.csv'  # Surveille le fichier de données
+      - '**/*.py'  # Surveiller les fichiers Python
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest     # Exécuter sur une machine virtuelle Ubuntu
+
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2  # Récupère ton code depuis le repository GitHub
-      
+      uses: actions/checkout@v2   # Récupère ton code depuis GitHub
+
     - name: Set up Python
-      uses: actions/setup-python@v2  # Configure l'environnement Python
+      uses: actions/setup-python@v2   # Configure l'environnement Python
       with:
-        python-version: 3.8  # Spécifie la version de Python que tu veux utiliser
+        python-version: 3.8           # Spécifie la version de Python à utiliser
 
     - name: Install dependencies
       run: |
-        python -m venv venv  # Crée un environnement virtuel
-        source venv/bin/activate  # Active l'environnement virtuel
-        pip install -r requirements.txt  # Installe les dépendances à partir de requirements.txt
+        python -m venv venv          # Crée un environnement virtuel
+        source venv/bin/activate     # Active l'environnement virtuel
+        pip install -r requirements.txt  # Installe les dépendances
 
+    # Étape 1 : Vérification du formatage avec 'black'
+    - name: Check code formatting with black
+      run: |
+        source venv/bin/activate
+        black --check .  # Vérifie le formatage du code
+
+    # Étape 2 : Vérification de la qualité du code avec 'flake8'
+    - name: Check code quality with flake8
+      run: |
+        source venv/bin/activate
+        flake8 .  # Vérifie la qualité du code (style PEP 8)
+
+    # Étape 3 : Vérification de la sécurité avec 'bandit'
+    - name: Check code security with bandit
+      run: |
+        source venv/bin/activate
+        bandit -r .  # Analyse le code à la recherche de vulnérabilités de sécurité
+
+    # Étape 4 : Exécution du Makefile
     - name: Run Makefile
       run: |
-        source venv/bin/activate  # Active l'environnement virtuel
-        make  # Exécute les étapes du Makefile
-
+        source venv/bin/activate     # Active l'environnement virtuel
+        make                         # Exécute les étapes définies dans le Makefile
 
