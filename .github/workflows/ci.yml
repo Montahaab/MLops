@@ -1,0 +1,36 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Déclenche l'action uniquement sur les changements dans la branche principale (main)
+    paths:
+      - '**/*.py'          # Surveille les fichiers Python
+      - '**/Makefile'      # Surveille le Makefile
+      - '**/Churn_Modelling.csv'  # Surveille le fichier de données
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Récupère ton code depuis le repository GitHub
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2  # Configure l'environnement Python
+      with:
+        python-version: 3.8  # Spécifie la version de Python que tu veux utiliser
+
+    - name: Install dependencies
+      run: |
+        python -m venv venv  # Crée un environnement virtuel
+        source venv/bin/activate  # Active l'environnement virtuel
+        pip install -r requirements.txt  # Installe les dépendances à partir de requirements.txt
+
+    - name: Run Makefile
+      run: |
+        source venv/bin/activate  # Active l'environnement virtuel
+        make  # Exécute les étapes du Makefile
+
+
