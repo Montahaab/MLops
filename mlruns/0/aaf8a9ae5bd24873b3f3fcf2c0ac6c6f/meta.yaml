@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/aaf8a9ae5bd24873b3f3fcf2c0ac6c6f/artifacts
+deleted_time: 1739533541240
+end_time: 1739532678693
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: aaf8a9ae5bd24873b3f3fcf2c0ac6c6f
+run_name: righteous-auk-740
+run_uuid: aaf8a9ae5bd24873b3f3fcf2c0ac6c6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739532674929
+status: 4
+tags: []
+user_id: root

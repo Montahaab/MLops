@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .positive {
+            background-color: #ffcc00;
+            color: black;
+        }
+        .negative {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Prédiction du Churn</h1>
+        <form method="post">
+            <label>Entrez les caractéristiques (séparées par des virgules) :</label><br>
+            <input type="text" name="features" placeholder="Ex: 0.2, 0.8, 0.5, 0.7, ..." required><br>
+            <button type="submit">Prédire</button>
+        </form>
+
+        {% if prediction is not none %}
+            <div class="result {% if prediction == 1 %}positive{% else %}negative{% endif %}">
+                Résultat de la prédiction : {{ prediction }}
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>

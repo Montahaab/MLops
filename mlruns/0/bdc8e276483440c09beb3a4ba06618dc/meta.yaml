@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/bdc8e276483440c09beb3a4ba06618dc/artifacts
+end_time: 1739533456614
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bdc8e276483440c09beb3a4ba06618dc
+run_name: traveling-trout-820
+run_uuid: bdc8e276483440c09beb3a4ba06618dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739533452184
+status: 3
+tags: []
+user_id: root
