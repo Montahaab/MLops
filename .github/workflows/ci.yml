@@ -78,9 +78,9 @@ jobs:
         docker tag your-image-name your-dockerhub-username/your-image-name:latest
         docker push your-dockerhub-username/your-image-name:latest
 
-    # Step 10: Upload artifact (optional step to store artifacts)
+    # Step 10: Upload artifact using v4
     - name: Upload model artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: model
         path: ./montaha_aladeb_4ds6_ml_project/model.joblib
