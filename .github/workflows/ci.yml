@@ -23,7 +23,6 @@ jobs:
         python-version: '3.x'
 
     # Step 2: Install dependencies
-    - name: Install dependencies
       run: |
         python -m venv venv
         source venv/bin/activate
@@ -78,9 +77,9 @@ jobs:
         docker tag your-image-name your-dockerhub-username/your-image-name:latest
         docker push your-dockerhub-username/your-image-name:latest
 
-    # Step 10: Upload artifact (use latest version)
+    # Step 10: Upload artifact (correct version v3)
     - name: Upload model artifact
-      uses: actions/upload-artifact@latest
+      uses: actions/upload-artifact@v3.0.0 # Specify the exact version here
       with:
         name: model
         path: ./montaha_aladeb_4ds6_ml_project/model.joblib
