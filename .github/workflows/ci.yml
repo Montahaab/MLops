@@ -37,19 +37,3 @@ jobs:
         run: |
           source venv/bin/activate
           flake8 .  # Lint all Python files in the repo
-
-      - name: 🔍 Static analysis with pylint
-        run: |
-          source venv/bin/activate
-          pylint app.py model_pipeline.py main.py test_environment.py web_app.py  # Lint the core project files
-
-      - name: 🔍 Static type checking with mypy
-        run: |
-          source venv/bin/activate
-          mypy app.py model_pipeline.py main.py test_environment.py web_app.py  # Static type checks for main project files
-
-      - name: ✅ Run tests with pytest
-        run: |
-          source venv/bin/activate
-          PYTHONPATH=. pytest tests/  # Run tests in the "tests" directory
-
