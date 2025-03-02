@@ -69,7 +69,7 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t your-image-name .
-      
+
     # Step 9: Push Docker image to DockerHub (optional step)
     - name: Push Docker image to DockerHub
       if: github.ref == 'refs/heads/main'
@@ -78,9 +78,9 @@ jobs:
         docker tag your-image-name your-dockerhub-username/your-image-name:latest
         docker push your-dockerhub-username/your-image-name:latest
 
-    # Step 10: Upload artifact (optional step to store artifacts)
+    # Step 10: Upload model artifact (optional step to store artifacts)
     - name: Upload model artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: model
         path: model.joblib
@@ -90,5 +90,4 @@ jobs:
       run: |
         # Your deployment script or steps
         echo "Deploying model..."
-
 
