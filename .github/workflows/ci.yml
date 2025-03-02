@@ -35,28 +35,28 @@ jobs:
       run: |
         source venv/bin/activate
         pip install black
-        black --check .
+        black --check ./montaha_aladeb_4ds6_ml_project
 
     # Step 4: Lint check (using flake8)
     - name: Lint code with flake8
       run: |
         source venv/bin/activate
         pip install flake8
-        flake8 .
+        flake8 ./montaha_aladeb_4ds6_ml_project
 
     # Step 5: Static analysis (using pylint)
     - name: Run pylint
       run: |
         source venv/bin/activate
         pip install pylint
-        pylint **/*.py
+        pylint ./montaha_aladeb_4ds6_ml_project/**/*.py
 
     # Step 6: Run security check (using bandit)
     - name: Run security checks with bandit
       run: |
         source venv/bin/activate
         pip install bandit
-        bandit -r .
+        bandit -r ./montaha_aladeb_4ds6_ml_project
 
     # Step 7: Run tests (using pytest)
     - name: Run tests with pytest
@@ -68,8 +68,8 @@ jobs:
     # Step 8: Build Docker image (optional step if Docker is used)
     - name: Build Docker image
       run: |
-        docker build -t your-image-name .
-
+        docker build -t your-image-name ./montaha_aladeb_4ds6_ml_project
+      
     # Step 9: Push Docker image to DockerHub (optional step)
     - name: Push Docker image to DockerHub
       if: github.ref == 'refs/heads/main'
@@ -78,12 +78,12 @@ jobs:
         docker tag your-image-name your-dockerhub-username/your-image-name:latest
         docker push your-dockerhub-username/your-image-name:latest
 
-    # Step 10: Upload model artifact (optional step to store artifacts)
+    # Step 10: Upload artifact (optional step to store artifacts)
     - name: Upload model artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: model
-        path: model.joblib
+        path: ./montaha_aladeb_4ds6_ml_project/model.joblib
 
     # Step 11: Deploy model (optional, adjust as needed for your deployment)
     - name: Deploy model
