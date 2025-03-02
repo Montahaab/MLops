@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1e16165039504912ae1f921d38d17e8c/artifacts
+end_time: 1740920571428
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1e16165039504912ae1f921d38d17e8c
+run_name: big-mole-444
+run_uuid: 1e16165039504912ae1f921d38d17e8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920571400
+status: 3
+tags: []
+user_id: root

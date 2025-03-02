@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3186a4e8830d4612a403f4e9276f764d/artifacts
+end_time: 1740920773057
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3186a4e8830d4612a403f4e9276f764d
+run_name: dapper-chimp-801
+run_uuid: 3186a4e8830d4612a403f4e9276f764d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920773038
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4cd3f0e4b57d492181b09223b8a61952/artifacts
+end_time: 1740920910191
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4cd3f0e4b57d492181b09223b8a61952
+run_name: melodic-stag-558
+run_uuid: 4cd3f0e4b57d492181b09223b8a61952
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920910170
+status: 3
+tags: []
+user_id: root

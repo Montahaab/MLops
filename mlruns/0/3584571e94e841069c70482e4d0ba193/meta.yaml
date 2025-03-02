@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3584571e94e841069c70482e4d0ba193/artifacts
+end_time: 1740921043711
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3584571e94e841069c70482e4d0ba193
+run_name: treasured-lark-35
+run_uuid: 3584571e94e841069c70482e4d0ba193
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740921043646
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/34562262622d45b7b9d572ce7d4e4bf8/artifacts
+end_time: 1740921125294
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 34562262622d45b7b9d572ce7d4e4bf8
+run_name: bustling-asp-835
+run_uuid: 34562262622d45b7b9d572ce7d4e4bf8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740921125227
+status: 3
+tags: []
+user_id: root

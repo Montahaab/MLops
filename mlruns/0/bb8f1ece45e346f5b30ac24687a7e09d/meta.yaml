@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/bb8f1ece45e346f5b30ac24687a7e09d/artifacts
+end_time: 1740919772220
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bb8f1ece45e346f5b30ac24687a7e09d
+run_name: legendary-bug-23
+run_uuid: bb8f1ece45e346f5b30ac24687a7e09d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740919772196
+status: 3
+tags: []
+user_id: root

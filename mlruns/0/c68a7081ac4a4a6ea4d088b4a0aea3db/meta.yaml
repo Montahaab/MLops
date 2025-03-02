@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c68a7081ac4a4a6ea4d088b4a0aea3db/artifacts
+end_time: 1740920920540
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c68a7081ac4a4a6ea4d088b4a0aea3db
+run_name: delicate-chimp-224
+run_uuid: c68a7081ac4a4a6ea4d088b4a0aea3db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920920475
+status: 3
+tags: []
+user_id: root

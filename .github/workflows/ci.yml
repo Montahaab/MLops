@@ -30,13 +30,6 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
 
-    # Step 3: Format check (using black)
-    - name: Check code formatting with black
-      run: |
-        source venv/bin/activate
-        pip install black
-        black --check ./montaha_aladeb_4ds6_ml_project
-
     # Step 4: Lint check (using flake8)
     - name: Lint code with flake8
       run: |

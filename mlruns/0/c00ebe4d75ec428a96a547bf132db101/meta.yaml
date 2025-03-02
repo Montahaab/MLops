@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c00ebe4d75ec428a96a547bf132db101/artifacts
+end_time: 1740920918843
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c00ebe4d75ec428a96a547bf132db101
+run_name: popular-shad-38
+run_uuid: c00ebe4d75ec428a96a547bf132db101
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920918755
+status: 3
+tags: []
+user_id: root

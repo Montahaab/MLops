@@ -62,11 +62,11 @@ all:
 # 8. Lancer l'API et ouvrir Swagger
 test-api:
 	@echo "Lancement de l'API FastAPI..."
-	@uvicorn app:app --host 0.0.0.0 --port 5000 --reload & sleep 3
-	@if command -v xdg-open > /dev/null; then xdg-open http://127.0.0.1:5000/docs; \
-	elif command -v open > /dev/null; then open http://127.0.0.1:5000/docs; \
-	elif command -v start > /dev/null; then start http://127.0.0.1:5000/docs; \
-	else echo "Veuillez ouvrir manuellement http://127.0.0.1:5000/docs"; fi
+	@uvicorn app:app --host 0.0.0.0 --port 5001 --reload & sleep 3
+	@if command -v xdg-open > /dev/null; then xdg-open http://127.0.0.1:5001/docs; \
+	elif command -v open > /dev/null; then open http://127.0.0.1:5001/docs; \
+	elif command -v start > /dev/null; then start http://127.0.0.1:5001/docs; \
+	else echo "Veuillez ouvrir manuellement http://127.0.0.1:5001/docs"; fi
 	
 # Étape de prédiction
 predict:

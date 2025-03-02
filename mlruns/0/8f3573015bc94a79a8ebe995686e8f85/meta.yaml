@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8f3573015bc94a79a8ebe995686e8f85/artifacts
+end_time: 1740921123560
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8f3573015bc94a79a8ebe995686e8f85
+run_name: whimsical-shoat-946
+run_uuid: 8f3573015bc94a79a8ebe995686e8f85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740921123464
+status: 3
+tags: []
+user_id: root

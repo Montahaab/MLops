@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/cecaa39633e04e5ba0686bf54c154488/artifacts
+end_time: 1740920577711
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cecaa39633e04e5ba0686bf54c154488
+run_name: intrigued-eel-876
+run_uuid: cecaa39633e04e5ba0686bf54c154488
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920577639
+status: 3
+tags: []
+user_id: root

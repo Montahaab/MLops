@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ee9f70fd1cbc42948806882cb28a8f85/artifacts
+end_time: 1740920575962
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ee9f70fd1cbc42948806882cb28a8f85
+run_name: adventurous-ram-277
+run_uuid: ee9f70fd1cbc42948806882cb28a8f85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920573016
+status: 3
+tags: []
+user_id: root

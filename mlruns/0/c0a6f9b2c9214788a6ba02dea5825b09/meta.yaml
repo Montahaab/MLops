@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c0a6f9b2c9214788a6ba02dea5825b09/artifacts
+end_time: 1740919950957
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c0a6f9b2c9214788a6ba02dea5825b09
+run_name: handsome-bass-911
+run_uuid: c0a6f9b2c9214788a6ba02dea5825b09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740919947919
+status: 3
+tags: []
+user_id: root

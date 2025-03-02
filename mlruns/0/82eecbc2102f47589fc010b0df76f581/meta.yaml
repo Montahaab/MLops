@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/82eecbc2102f47589fc010b0df76f581/artifacts
+end_time: 1740919952903
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 82eecbc2102f47589fc010b0df76f581
+run_name: gentle-hen-357
+run_uuid: 82eecbc2102f47589fc010b0df76f581
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740919952818
+status: 4
+tags: []
+user_id: root

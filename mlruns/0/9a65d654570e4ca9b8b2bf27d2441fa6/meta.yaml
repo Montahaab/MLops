@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/9a65d654570e4ca9b8b2bf27d2441fa6/artifacts
+end_time: 1740920332206
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9a65d654570e4ca9b8b2bf27d2441fa6
+run_name: capable-yak-979
+run_uuid: 9a65d654570e4ca9b8b2bf27d2441fa6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920332181
+status: 3
+tags: []
+user_id: root

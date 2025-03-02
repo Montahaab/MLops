@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/9dd0a0bc1df2452a88d0260e0f36b5d0/artifacts
+end_time: 1740920915238
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9dd0a0bc1df2452a88d0260e0f36b5d0
+run_name: big-shoat-751
+run_uuid: 9dd0a0bc1df2452a88d0260e0f36b5d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920912073
+status: 3
+tags: []
+user_id: root

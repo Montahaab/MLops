@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/7c780615d3ac45c88bf252b5faa3ceac/artifacts
+end_time: 1740921034069
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7c780615d3ac45c88bf252b5faa3ceac
+run_name: angry-tern-190
+run_uuid: 7c780615d3ac45c88bf252b5faa3ceac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740921034048
+status: 3
+tags: []
+user_id: root

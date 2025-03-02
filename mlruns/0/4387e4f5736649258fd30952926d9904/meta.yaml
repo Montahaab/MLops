@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4387e4f5736649258fd30952926d9904/artifacts
+end_time: 1740920779304
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4387e4f5736649258fd30952926d9904
+run_name: aged-stoat-281
+run_uuid: 4387e4f5736649258fd30952926d9904
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740920779219
+status: 3
+tags: []
+user_id: root

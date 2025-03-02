@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1eaf7fef07414d25ac97650101093887/artifacts
+end_time: 1740921038510
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1eaf7fef07414d25ac97650101093887
+run_name: omniscient-wasp-323
+run_uuid: 1eaf7fef07414d25ac97650101093887
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740921035690
+status: 3
+tags: []
+user_id: root
