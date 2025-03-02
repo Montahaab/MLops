@@ -6,9 +6,13 @@ import numpy as np
 import os
 
 app = FastAPI()
+
+
 @app.get("/")
 def home():
-    return {"message": "Bienvenue sur l'API FastAPI ! Utilisez /docs pour voir la documentation."}
+    return {
+        "message": "Bienvenue sur l'API FastAPI ! Utilisez /docs pour voir la documentation."
+    }
 
 
 # Charger le modèle et le scaler
@@ -23,8 +27,10 @@ if not os.path.exists(SCALER_PATH):
 model = joblib.load(MODEL_PATH)
 scaler = joblib.load(SCALER_PATH)
 
+
 class Features(BaseModel):
-    features: List[float]  
+    features: List[float]
+
 
 @app.post("/predict")
 def predict(data: Features):
@@ -39,10 +45,11 @@ def predict(data: Features):
         prediction = model.predict(features_scaled)
 
         return {"prediction": int(prediction[0])}
-    except Exception as e:
-        return {"error": str(e)}
+    except Exception:
+        return {"error": "Une erreur est survenue pendant la prédiction."}
+
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=5000)
 
+    uvicorn.run(app, host="0.0.0.0", port=5001)

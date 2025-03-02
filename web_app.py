@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 API_URL = "http://127.0.0.1:5000/predict"
 
+
 @app.route("/", methods=["GET", "POST"])
 def home():
     prediction = None
@@ -31,6 +32,6 @@ def home():
 
     return render_template("index.html", prediction=prediction, error=error)
 
-if __name__ == "__main__":
-    app.run(debug=True,port=5001)
 
+if __name__ == "__main__":
+    app.run(debug=True, port=5001)
