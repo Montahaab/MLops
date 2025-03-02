@@ -16,11 +16,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    # Step 1: Set up Python
-    - name: Set up Python 3.x
+    # Step 1: Set up Python 3.8.10
+    - name: Set up Python 3.8.10
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: '3.8.10'
 
     # Step 2: Install dependencies
     - name: Install dependencies
@@ -78,9 +78,9 @@ jobs:
         docker tag your-image-name your-dockerhub-username/your-image-name:latest
         docker push your-dockerhub-username/your-image-name:latest
 
-    # Step 10: Upload artifact (use correct version)
+    # Step 10: Upload artifact (optional step to store artifacts)
     - name: Upload model artifact
-      uses: actions/upload-artifact@v2.2.4
+      uses: actions/upload-artifact@v3
       with:
         name: model
         path: ./montaha_aladeb_4ds6_ml_project/model.joblib
